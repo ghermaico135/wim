@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary-red: #f53711;
+    --primary-blue: #2e74e6;
+}
+
+body {
+    background-image: linear-gradient(
+        rgb(10, 60, 117) 0%,
+        rgb(226, 11, 172) 90%
+    );
+}
+
+.wrapper {
+    height: 100vh;
+    width: 50vw;
+    transform: translateX(30%);
+}
+
+.myColor {
+    background: blue;
+}
+small {
+    display: none;
+}
