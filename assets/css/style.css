@@ -8,6 +8,7 @@
 :root {
     --primary-red: #f53711;
     --primary-blue: #2e74e6;
+    --primary-green: #1dd890;
 }
 
 body {
@@ -23,9 +24,19 @@ body {
     transform: translateX(30%);
 }
 
-.myColor {
-    background: blue;
+.form-control {
+    border-radius: 5px;
 }
-small {
-    display: none;
+.form-control.error input {
+    border-color: var(--primary-red);
+}
+.form-control.success input {
+    border-color: var(--primary-green);
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0px 5px 0px 5px;
 }

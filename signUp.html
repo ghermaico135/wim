@@ -25,36 +25,10 @@
                                         <i class="fas fa-user fa-lg"></i>
                                     </span>
                                 </div>
-                                <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name"> <br>
-                                <small>The field is required</small>
+                                <input type="text" class="form-control" id="fname" name="fname" placeholder="Full Name"> <br>
+                               
                             </div>
-                            <div class="input-group input-group-lg form-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="fas fa-user fa-lg"></i>
-                                    </span>
-                                </div>
-                                <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name">
-                                <small>The field is required</small>
-                            </div>
-                            <div class="input-group input-group-lg form-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="fa fa-phone fa-lg"></i>
-                                    </span>
-                                </div>
-                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number">
-                                <small>The field is required</small>
-                            </div>
-                            <div class="input-group input-group-lg form-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="far fa-envelope fa-lg"></i>
-                                    </span>
-                                </div>
-                                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
-                                <small>The field is required</small>
-                            </div>
+
                             <div class="input-group input-group-lg form-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">
@@ -62,8 +36,30 @@
                                     </span>
                                 </div>
                                 <input type="text" class="form-control" id="username" name="username" placeholder="UserName">
-                                <small>The field is required</small>
+                                
                             </div>
+                           
+                           
+                            <div class="input-group input-group-lg form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="far fa-envelope fa-lg"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                                
+                            </div>
+
+                            <div class="input-group input-group-lg form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-phone fa-lg"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number">
+                                
+                            </div>
+                           
                             <div class="input-group input-group-lg form-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">
@@ -71,7 +67,7 @@
                                     </span>
                                 </div>
                                 <input type="text" class="form-control" id="password" name="password" placeholder="Enter Password">
-                                <small>The field is required</small>
+                                
                             </div>
                             <div class="input-group input-group-lg form-group">
                                 <div class="input-group-prepend">
@@ -80,20 +76,15 @@
                                     </span>
                                 </div>
                                 <input type="text" class="form-control" id="r_password" name="r_password" placeholder="Confirm Password">
-                                <small>The field is required</small>
+                                
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gender" id="gender" value="Male">
-                                <label class="form-check-label" for="gender">
-                                  Male
-                                </label>
-                              </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gender" id="gender" value="Female">
-                                <label class="form-check-label" for="gender">
-                                  Female
-                                </label>
-                              </div>
+
+                            <select class="custom-select custom-select-lg mb-3" id="gender">
+                                <option selected>Gender</option>
+                                <option value="MALE">Male</option>
+                                <option value="FEMALE">Female</option>
+                            </select>
+                            
                             <div class="form-group">
                                 <input type="submit" class="btn btn-primary btn-lg btn-block"  value="SignUp">
                                 
@@ -108,7 +99,9 @@
     </div>
 
 
-
+    <script src="./assets/jquery/jquery.js"></script>
     <script src="./assets/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+
 </body>
 </html>
