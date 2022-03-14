@@ -7,7 +7,7 @@ const password = document.querySelector("#password");
 const RepeatPassword = document.querySelector("#r_password");
 const gender = document.querySelector("#gender");
 
-function showError(input, message) {
+function showError(input) {
     const formInput = input.parentElement;
     formInput.className = "form-control error";
     // formInput.innerText = message;
