@@ -7,6 +7,8 @@ const password = document.querySelector("#password");
 const RepeatPassword = document.querySelector("#r_password");
 const gender = document.querySelector("#gender");
 
+const signUpSubmit = document.querySelector("#signUp-submit")
+
 function showError(input) {
     const formInput = input.parentElement;
     formInput.className = "form-control error";
@@ -45,3 +47,20 @@ form.addEventListener("submit", (e) => {
         gender,
     ]);
 });
+
+
+
+// ajax request for SignUp or RegisterUser
+
+signUpSubmit.addEventListener('click',(e) =>{
+    e.preventDefault();
+
+    fetch('../../php/actions.php',{
+        method: 'POST',
+        body:new FormData(form),
+    }).then(res=>{
+        res.data
+    }).then(data=>{
+        console.log(data.status)
+    })
+})
